@@ -5,7 +5,7 @@ const fortnite = new Client(fkey.token)
 module.exports.run = async (bot, message, args) => {
   //this is where the actual code for the command goes
   await message.delete();
-  if (message.author.id !== '178657593030475776') return;
+  if (message.author.id !== '521763526436585472') return;
 
   const filter = m => m.author.id === message.author.id;
   message.reply("Please chose a username... Will expire in 10 seconds...").then(q => q.delete(15000))
